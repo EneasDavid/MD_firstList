@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <math.h>
 int eh_primo(int vez){
-    for(int i=2;i<vez;i++){
+    for(int i=2;i<=sqrt(vez);i++){
         if(!(vez%i)){
              return 0;
         }
@@ -9,8 +10,8 @@ int eh_primo(int vez){
 }
 
 int main(){
-    int numero, eh_primo=0;
+    int numero;
     scanf("%d", &numero);
-    printf(eh_primo(numero)?"A entrada é primo\n":"A entrada não é primo\n");
+    printf(numero<=1?"A entrada não é primo\n":eh_primo(numero)?"A entrada é primo\n":"A entrada não é primo\n");
     return 0;
 }
