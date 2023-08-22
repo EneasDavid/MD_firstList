@@ -1,9 +1,12 @@
 #include <stdio.h>
 
-int eh_primo(int vez){
-    for(int i = 2; i < vez; i++){
-        if(!(vez % i)){
-            return 0;
+int eh_primo(int vez) {
+    if (vez < 2) {
+         return 0;      
+    }
+    for (int i = 3; i <= sqrt(vez); i+=2) {
+        if (!(vez % i)) {
+             return 0;
         }
     }
     return 1;

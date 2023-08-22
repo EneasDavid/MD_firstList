@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <math.h>
-int eh_primo(int vez){
-    if(vez<2){
+int eh_primo(int vez) {
+    if (vez < 2) {
          return 0;      
     }
-    for(int i=2;i<=sqrt(vez);i++){
-        if(!(vez%i)){
+    for (int i = 3; i <= sqrt(vez); i+=2) {
+        if (!(vez % i)) {
              return 0;
         }
     }
