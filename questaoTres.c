@@ -13,16 +13,20 @@ int eh_primo(int vez) {
     return 1;
 }
 void decomposicao(int valorDecomposto, int i){
-    while(valorDecomposto>1){
-        if(eh_primo(i) && valorDecomposto%i==0){
-             printf("%d", i);
-             valorDecomposto/=i;
-             if(valorDecomposto>1){
-                 printf(" * ");
-             }
-        }else{
-             i++;
+    if(!(eh_primo(valorDecomposto))){
+        while(valorDecomposto>1){
+            if(eh_primo(i) && valorDecomposto%i==0){
+                 printf("%d", i);
+                 valorDecomposto/=i;
+                 if(valorDecomposto>1){
+                     printf(" * ");
+                 }
+            }else{
+                 i++;
+            }
         }
+    }else{
+        printf("%d",valorDecomposto);
     }
 }
 int main(){
