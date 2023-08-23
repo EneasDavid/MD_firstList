@@ -13,9 +13,8 @@ int eh_primo(int vez) {
     }
     return 1;
 }
-int watch(int intervalo) {
-     time_t inicioLoop = time(NULL);     
-     while ((time(NULL)-inicioLoop) < 60) {
+int watch(int intervalo, time_t inicio) {
+     while ((time(NULL)-inicio) < 60) {
          if (eh_primo(intervalo)) {
              printf("%d\n", intervalo);
          }
@@ -23,6 +22,6 @@ int watch(int intervalo) {
     }
 }
 int main() {
-    watch(1);
+    watch(1,time(NULL));
     return 0;
 }
