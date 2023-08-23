@@ -6,7 +6,7 @@ int eh_primo(int vez) {
     if (vez < 2) {
          return 0;      
     }
-    for (int i = 3; i <= sqrt(vez); i+=2) {
+    for (int i = 3; i <= sqrt(vez); i++) {
         if (!(vez % i)) {
              return 0;
         }
