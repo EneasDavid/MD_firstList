@@ -16,7 +16,6 @@ int mmc(int um, int dois) {
 int main() {
     int entradaUm, entradaDois;
     scanf("%d%d", &entradaUm, &entradaDois);
-    printf("MDC = %d\n", mdc(entradaUm, entradaDois));
-    printf("MMC = %d\n", mmc(entradaUm, entradaDois)); 
+    printf("MDC = %d\nMMC = %d", mdc(entradaUm, entradaDois),mmc(entradaUm, entradaDois));
     return 0;
 }

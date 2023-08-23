@@ -3,20 +3,11 @@
 #include <math.h>
 #include <stdlib.h>
 
-int mdc(int a, int b){
-    int maior,menor,rest;
-    maior = a;
-    menor = b;
-    if(a<b){
-        maior=b;
-        menor=a;
-    }
-    rest=(maior%menor);
-    
-    if(rest==0){
-        return menor;
+int mdc(int a, int b){ 
+    if(b==0){
+        return a;
     }else{
-        return mdc(menor,(rest));
+        return mdc(b,(a%b));
     }
 }
 
