@@ -1,9 +1,9 @@
-Scripts da resolução da lista de Matemtica discreta
-UFAL - 2023
-Codigos desenvolvidos seguindo a logica passada durante as aulas teoricas
-By 
-David Enéas
-Mariáh Lins
-Julya Victoria
-Pedro Gabriel 
-Eduardo 
+Ambiente de criptografia- projeto proposto na matéria de Matemática Discreta, pelo professor Bruno Pimentel.
+
+Integrantes:
+
+David Eneas Ferreira
+Eduardo Maciel Alexandre
+Mariáh Lins Sena
+Pedro Gabriel Medeiros de Lima
+Victória Júllya Cabral da Silva
